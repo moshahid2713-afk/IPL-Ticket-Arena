@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Ticket Arena</title>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>IPL TICKET ARENA</h1>
+        <p>Experience the Stadium Energy Live!</p>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a> |
+            <a href="#about">About IPL</a> |
+            <a href="#matches">Matches</a> |
+            <a href="#booking">Book Tickets</a> |
+            <a href="#mybookings">My Bookings</a> |
+            <a href="#guidelines">Guidelines</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home">
+            <h2>Experience the Stadium Energy Live!</h2>
+            <p>
+                Get ready for the excitement of T20 cricket.
+                Explore the teams, view sample matches and reserve
+                your preferred ticket category.
+            </p>
+            <h3>Watch. Cheer. Celebrate.</h3>
+            <p>
+                <a href="#matches">View Match Schedule</a> |
+                <a href="#booking">Book a Ticket</a>
+            </p>
+        </section>
+
+        <!-- About IPL Section -->
+        <section id="about">
+            <h2>About IPL</h2>
+            <p>
+                The Indian Premier League (IPL) is a professional
+                Twenty20 cricket league featuring teams representing
+                different cities in India.
+            </p>
+
+            <h3>IPL Teams</h3>
+            <ul>
+                <li>Chennai Super Kings (CSK)</li>
+                <li>Mumbai Indians (MI)</li>
+                <li>Royal Challengers Bengaluru (RCB)</li>
+                <li>Kolkata Knight Riders (KKR)</li>
+                <li>Rajasthan Royals (RR)</li>
+                <li>Sunrisers Hyderabad (SRH)</li>
+                <li>Delhi Capitals (DC)</li>
+                <li>Punjab Kings (PBKS)</li>
+                <li>Gujarat Titans (GT)</li>
+                <li>Lucknow Super Giants (LSG)</li>
+            </ul>
+
+            <h3>Popular IPL Stadiums</h3>
+            <ul>
+                <li>M. Chinnaswamy Stadium, Bengaluru</li>
+                <li>Wankhede Stadium, Mumbai</li>
+                <li>MA Chidambaram Stadium, Chennai</li>
+                <li>Eden Gardens, Kolkata</li>
+                <li>Narendra Modi Stadium, Ahmedabad</li>
+            </ul>
+        </section>
+
+        <!-- Match Schedule Section -->
+        <section id="matches">
+            <h2>IPL Match Schedule</h2>
+            <p>
+                Browse the sample match schedule below and choose
+                a match for the booking form.
+            </p>
+
+            <h3>Find Matches by Team</h3>
+            <label for="team">Select a team:</label>
+            <select id="team" name="team">
+                <option value="all">All Teams</option>
+                <option value="CSK">Chennai Super Kings</option>
+                <option value="MI">Mumbai Indians</option>
+                <option value="RCB">Royal Challengers Bengaluru</option>
+                <option value="KKR">Kolkata Knight Riders</option>
+                <option value="RR">Rajasthan Royals</option>
+                <option value="SRH">Sunrisers Hyderabad</option>
+                <option value="DC">Delhi Capitals</option>
+                <option value="PBKS">Punjab Kings</option>
+                <option value="GT">Gujarat Titans</option>
+                <option value="LSG">Lucknow Super Giants</option>
+            </select>
+            <p><small>Note: This HTML-only dropdown is for demonstration. It does not filter the table.</small></p>
+
+            <h3>Sample Matches</h3>
+            <table>
+                <caption>Example IPL match and ticket information</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Match No.</th>
+                        <th scope="col">Teams</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Venue</th>
+                        <th scope="col">Starting Ticket Price</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>RCB vs CSK</td>
+                        <td>Sample date</td>
+                        <td>Bengaluru</td>
+                        <td>₹1,500</td>
+                        <td><a href="#booking">Book Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MI vs KKR</td>
+                        <td>Sample date</td>
+                        <td>Mumbai</td>
+                        <td>₹2,000</td>
+                        <td><a href="#booking">Book Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>SRH vs RCB</td>
+                        <td>Sample date</td>
+                        <td>Hyderabad</td>
+                        <td>₹1,800</td>
+                        <td><a href="#booking">Book Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>CSK vs MI</td>
+                        <td>Sample date</td>
+                        <td>Chennai</td>
+                        <td>₹2,500</td>
+                        <td><a href="#booking">Book Now</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Ticket Booking Section -->
+        <section id="booking">
+            <h2>Book Your IPL Tickets</h2>
+            <p>Enter your details in the form below.</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <p>
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your full name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email"
+                               placeholder="Enter your email address" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="Enter your 10-digit phone number"
+                               pattern="[0-9]{10}"
+                               title="Enter exactly 10 digits" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Match Details</legend>
+
+                    <p>
+                        <label for="match">Select Match:</label><br>
+                        <select id="match" name="match" required>
+                            <option value="">-- Select a Match --</option>
+                            <option value="RCB vs CSK">RCB vs CSK</option>
+                            <option value="MI vs KKR">MI vs KKR</option>
+                            <option value="SRH vs RCB">SRH vs RCB</option>
+                            <option value="CSK vs MI">CSK vs MI</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="tickets">Number of Tickets:</label><br>
+                        <input type="number" id="tickets" name="tickets"
+                               min="1" max="10" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ticket Category</legend>
+
+                    <input type="radio" id="general" name="category"
+                           value="General" required>
+                    <label for="general">General - ₹1,500</label><br>
+
+                    <input type="radio" id="premium" name="category"
+                           value="Premium">
+                    <label for="premium">Premium - ₹3,000</label><br>
+
+                    <input type="radio" id="vip" name="category"
+                           value="VIP">
+                    <label for="vip">VIP - ₹5,000</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Method</legend>
+
+                    <input type="radio" id="upi" name="payment"
+                           value="UPI" required>
+                    <label for="upi">UPI</label><br>
+
+                    <input type="radio" id="card" name="payment"
+                           value="Card">
+                    <label for="card">Debit / Credit Card</label><br>
+
+                    <input type="radio" id="netbanking" name="payment"
+                           value="Net Banking">
+                    <label for="netbanking">Net Banking</label>
+                </fieldset>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms"
+                           value="accepted" required>
+                    <label for="terms">
+                        I agree to the booking terms and conditions.
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Booking Form</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+            </form>
+
+            <p>
+                <strong>Demo notice:</strong> This is an HTML-only
+                demonstration. The form does not create a real booking
+                or process a payment.
+            </p>
+        </section>
+
+        <!-- My Bookings Section -->
+        <section id="mybookings">
+            <h2>My Bookings</h2>
+            <p>Example of how booking details could be displayed.</p>
+
+            <table>
+                <caption>Sample booking record (demonstration only)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Booking ID</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Match</th>
+                        <th scope="col">Tickets</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IPL1001</td>
+                        <td>Demo Customer</td>
+                        <td>RCB vs CSK</td>
+                        <td>2</td>
+                        <td>Premium</td>
+                        <td>Sample Record</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Booking Guidelines Section -->
+        <section id="guidelines">
+            <h2>Booking Guidelines</h2>
+
+            <ol>
+                <li>Enter correct personal details in the booking form.</li>
+                <li>Select your preferred match.</li>
+                <li>Choose the required number of tickets.</li>
+                <li>Select a ticket category.</li>
+                <li>Review your details before submitting the form.</li>
+                <li>Keep your valid ticket available when entering the stadium.</li>
+                <li>Follow the stadium rules and regulations.</li>
+                <li>Tickets are subject to availability and official event rules.</li>
+            </ol>
+
+            <h3>Important Information</h3>
+            <p>
+                Reach the stadium before the match starts. Keep your
+                ticket details safe and follow the instructions provided
+                by the event organizers.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <h2>IPL TICKET ARENA</h2>
+        <p>Your Gateway to Live Cricket Action!</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="#home">Home</a> |
+            <a href="#matches">Matches</a> |
+            <a href="#booking">Book Tickets</a> |
+            <a href="#guidelines">Guidelines</a>
+        </nav>
+
+        <p>Email: support@iplticketarena.example</p>
+        <p>&copy; 2026 IPL Ticket Arena. All Rights Reserved.</p>
+        <p><small>Student demonstration project. Not an official IPL ticketing website.</small></p>
+    </footer>
+
+</body>
+</html>
