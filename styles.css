@@ -347,4 +347,23 @@ footer a:hover {
         transform: translateY(0);
     }
 }
+/* Activity 7 - Booking Summary */
 
+.booking-summary {
+    background: #f4f4f4;
+    color: #222;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+.booking-summary h3 {
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+.booking-summary p {
+    margin: 10px 0;
+    font-size: 16px;
+}

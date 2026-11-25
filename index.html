@@ -200,21 +200,19 @@
                     </p>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Ticket Category</legend>
+                
+<fieldset>
+    <legend>Ticket Category</legend>
 
-                    <input type="radio" id="general" name="category"
-                           value="General" required>
-                    <label for="general">General - ₹1,500</label><br>
+    <label for="category">Select Stand:</label>
+    <select id="category" name="category" required>
+        <option value="">-- Select Category --</option>
+        <option value="General">General - ₹1,500</option>
+        <option value="Premium">Premium - ₹3,000</option>
+        <option value="VIP">VIP - ₹5,000</option>
+    </select>
+</fieldset>
 
-                    <input type="radio" id="premium" name="category"
-                           value="Premium">
-                    <label for="premium">Premium - ₹3,000</label><br>
-
-                    <input type="radio" id="vip" name="category"
-                           value="VIP">
-                    <label for="vip">VIP - ₹5,000</label>
-                </fieldset>
 
                 <fieldset>
                     <legend>Payment Method</legend>
@@ -245,6 +243,20 @@
                     <button type="reset">Reset Form</button>
                 </p>
             </form>
+
+<!-- Booking Summary Card -->
+<div class="booking-summary">
+    <h3>Booking Summary</h3>
+
+    <p>Selected Match: <span id="summaryMatch">Not selected</span></p>
+
+    <p>Stand Category: <span id="summaryCategory">Not selected</span></p>
+
+    <p>Number of Tickets: <span id="summaryTickets">0</span></p>
+
+    <h3>Total Price: ₹<span id="summaryTotal">0</span></h3>
+</div>
+
 
             <p>
                 <strong>Demo notice:</strong> This is an HTML-only
